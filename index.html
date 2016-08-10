@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body ng-app="myApp">
+	<header>
+		
+	</header>
+	<section ng-controler="mainController">
+		<input type="text" name="" ng-model="inputText">
+		<p>{{inputText}}</p>
+		<ul>
+			<li ng-repeat="item in items">{{item}}</li>
+		</ul>
+		<input type="button" name="action" ng-click="action()" placeholder="enter some" value="action">
+	</section>
+	<footer>
+		
+	</footer>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
